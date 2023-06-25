@@ -37,11 +37,11 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     public void Update()
     {
-        this.MoveBehavior();
+        this.MoveBehaviour();
         this.Animation();
     }
 
-    private void MoveBehavior() {
+    private void MoveBehaviour() {
         this.movimentX = Input.GetAxisRaw("Horizontal");
 
         var newPosition = new Vector3(this.movimentX * this.moveForce * Time.deltaTime, 0f);
