@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8841085037921087104}
   - component: {fileID: 162173998185938162}
   - component: {fileID: 4235732057810168893}
+  - component: {fileID: 2403453697582932266}
   m_Layer: 0
   m_Name: WhiteGuy
   m_TagString: Untagged
@@ -180,3 +181,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &2403453697582932266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 666356804091257093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b70a1bfbe7de6414e9530e94ea18beea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveForce: 10
+  jumpForce: 11
+  movimentX: 0
