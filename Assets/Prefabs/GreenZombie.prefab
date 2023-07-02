@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4453208580451666827}
   - component: {fileID: 7007529641095053644}
   - component: {fileID: 3870795656318216602}
-  - component: {fileID: 4609404443637360635}
+  - component: {fileID: 1716878725961529430}
   m_Layer: 0
   m_Name: GreenZombie
   m_TagString: Untagged
@@ -159,7 +159,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!95 &3870795656318216602
 Animator:
   serializedVersion: 5
@@ -181,7 +181,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &4609404443637360635
+--- !u!114 &1716878725961529430
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -190,10 +190,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1865158225248573591}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b70a1bfbe7de6414e9530e94ea18beea, type: 3}
+  m_Script: {fileID: 11500000, guid: 819f00935d4740c429af813b315a9e77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveForce: 10
-  jumpForce: 11
-  movimentX: 0
-  isGrounded: 1
+  speed: 7

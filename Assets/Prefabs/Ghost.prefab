@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8402916253299523314}
   - component: {fileID: 4803337031759450451}
   - component: {fileID: 4627507508958646645}
-  - component: {fileID: 5085343391029525990}
+  - component: {fileID: 2090504612078948318}
   m_Layer: 0
   m_Name: Ghost
   m_TagString: Untagged
@@ -117,7 +117,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5941300658451221578}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -135,7 +135,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &4627507508958646645
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -181,7 +181,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.93, y: 2.2}
   m_EdgeRadius: 0
---- !u!114 &5085343391029525990
+--- !u!114 &2090504612078948318
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -190,10 +190,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5941300658451221578}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b70a1bfbe7de6414e9530e94ea18beea, type: 3}
+  m_Script: {fileID: 11500000, guid: 819f00935d4740c429af813b315a9e77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveForce: 10
-  jumpForce: 11
-  movimentX: 0
-  isGrounded: 1
+  speed: 7

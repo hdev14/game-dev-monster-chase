@@ -6086,17 +6086,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: WhiteGuy
       objectReference: {fileID: 0}
+    - target: {fileID: 4587460309468333067, guid: 4f1a188a0acd4d04aa6bcc4f64070d01, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6105955986774986605, guid: 4f1a188a0acd4d04aa6bcc4f64070d01, type: 3}
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6105955986774986605, guid: 4f1a188a0acd4d04aa6bcc4f64070d01, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.48
+      value: 0.86
       objectReference: {fileID: 0}
     - target: {fileID: 6105955986774986605, guid: 4f1a188a0acd4d04aa6bcc4f64070d01, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.2
+      value: 0.14
       objectReference: {fileID: 0}
     - target: {fileID: 6105955986774986605, guid: 4f1a188a0acd4d04aa6bcc4f64070d01, type: 3}
       propertyPath: m_LocalPosition.z

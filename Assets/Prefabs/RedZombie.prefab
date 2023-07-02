@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 654937768724052326}
   - component: {fileID: 4161316972642857126}
   - component: {fileID: 8314181036706208975}
-  - component: {fileID: 930147994707906492}
+  - component: {fileID: 916087997175426988}
   m_Layer: 0
   m_Name: RedZombie
   m_TagString: Untagged
@@ -180,8 +180,8 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!114 &930147994707906492
+  m_Constraints: 4
+--- !u!114 &916087997175426988
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -190,10 +190,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7842659810861747906}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b70a1bfbe7de6414e9530e94ea18beea, type: 3}
+  m_Script: {fileID: 11500000, guid: 819f00935d4740c429af813b315a9e77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveForce: 10
-  jumpForce: 11
-  movimentX: 0
-  isGrounded: 1
+  speed: 7
