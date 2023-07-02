@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 2403453697582932266}
   m_Layer: 0
   m_Name: WhiteGuy
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -196,3 +196,4 @@ MonoBehaviour:
   moveForce: 10
   jumpForce: 11
   movimentX: 0
+  isGrounded: 1
