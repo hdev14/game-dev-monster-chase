@@ -13,13 +13,19 @@ public class Player : MonoBehaviour
     [SerializeField]
     private float movimentX = 0f;
 
-    private static string WALK_ANIMATION = "IsWalk";
+    private const string WALK_ANIMATION = "IsWalk";
+
+    private const string GROUND_TAG = "Ground";
+
+    [SerializeField]
+    private bool isGrounded = true;
 
     private Rigidbody2D body;
 
     private SpriteRenderer spriteRenderer;
 
     private Animator animator;
+
 
     public void Awake()
     {
@@ -39,6 +45,7 @@ public class Player : MonoBehaviour
     {
         this.MoveBehaviour();
         this.Animation();
+        this.JumBehaviour();
     }
 
     private void MoveBehaviour() {
@@ -57,5 +64,19 @@ public class Player : MonoBehaviour
         }
 
         this.animator.SetBool(Player.WALK_ANIMATION, false);
+    }
+
+    private void JumBehaviour()
+    {
+        if (Input.GetButtonDown("Jump") && this.isGrounded)
+        {
+            this.body.AddForce(new Vector2(0f, this.jumpForce), ForceMode2D.Impulse);
+            this.isGrounded = false;
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        this.isGrounded = collision.gameObject.CompareTag(Player.GROUND_TAG);    
     }
 }
