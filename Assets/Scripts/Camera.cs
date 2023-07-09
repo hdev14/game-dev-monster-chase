@@ -5,20 +5,20 @@ using UnityEngine;
 
 public class Camera : MonoBehaviour
 {
-
-    private Transform playerTransform;
-
     private const float MAX_X = 60f;
     
     private const float MIN_X = -60f;
 
-    // Start is called before the first frame update
+    private Transform playerTransform;
+    
+    private GameObject playerObject;
+   
     void Start()
     {
-        var playerObject = GameObject.FindWithTag("Player");
+        this.playerObject = GameObject.FindWithTag("Player");
 
-        if (playerObject != null) {
-            this.playerTransform = playerObject.transform;
+        if (this.playerObject != null) {
+            this.playerTransform = this.playerObject.transform;
         }
     }
 

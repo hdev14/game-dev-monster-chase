@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    private const string WALK_ANIMATION = "IsWalk";
+
+    private const string GROUND_TAG = "Ground";
+
     [SerializeField]
     private float moveForce = 10f;
     
@@ -12,10 +16,6 @@ public class Player : MonoBehaviour
 
     [SerializeField]
     private float movimentX = 0f;
-
-    private const string WALK_ANIMATION = "IsWalk";
-
-    private const string GROUND_TAG = "Ground";
 
     [SerializeField]
     private bool isGrounded = true;

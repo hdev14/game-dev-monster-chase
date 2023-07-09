@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    [HideInInspector]
-    public float speed = 7f;
+    private float speed;
 
     private Rigidbody2D body;
 
+    public void setSpeed(float value) {
+        this.speed = value;
+    }
 
     private void Awake()
     {
