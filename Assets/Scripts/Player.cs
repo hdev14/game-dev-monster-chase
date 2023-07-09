@@ -32,18 +32,11 @@ public class Player : MonoBehaviour
         this.animator = this.GetComponent<Animator>();
     }
 
-    // Start is called before the first frame update
-    public void Start()
-    {
-
-    }
-
-    // Update is called once per frame
     public void Update()
     {
-        this.MoveBehaviour();
         this.Animation();
-        this.JumBehaviour();
+        this.MoveBehaviour();
+        this.JumpBehaviour();
     }
 
     private void MoveBehaviour()
@@ -67,7 +60,7 @@ public class Player : MonoBehaviour
         this.animator.SetBool(Player.WALK_ANIMATION, false);
     }
 
-    private void JumBehaviour()
+    private void JumpBehaviour()
     {
         if (Input.GetButtonDown("Jump") && this.isGrounded)
         {
