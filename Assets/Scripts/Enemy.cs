@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
@@ -8,7 +6,8 @@ public class Enemy : MonoBehaviour
 
     private Rigidbody2D body;
 
-    public void setSpeed(float value) {
+    public void setSpeed(float value)
+    {
         this.speed = value;
     }
 
@@ -19,7 +18,7 @@ public class Enemy : MonoBehaviour
 
     private void FixedUpdate()
     {
-        body.velocity = new Vector2(this.speed, body.velocity.y);   
+        body.velocity = new Vector2(this.speed, body.velocity.y);
     }
 
 }

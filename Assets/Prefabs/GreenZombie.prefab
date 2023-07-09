@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 7007529641095053644}
   - component: {fileID: 3870795656318216602}
   - component: {fileID: 1716878725961529430}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GreenZombie
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -183,4 +183,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 819f00935d4740c429af813b315a9e77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 7
