@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    public const string TAG = "Enemy";
+
     private float speed;
 
     private Rigidbody2D body;

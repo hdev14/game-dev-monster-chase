@@ -6,8 +6,6 @@ public class Player : MonoBehaviour
 
     private const string GROUND_TAG = "Ground";
 
-    private const string ENEMY_TAG = "Enemy";
-
     [SerializeField]
     private float moveForce = 10f;
 
@@ -82,7 +80,7 @@ public class Player : MonoBehaviour
     {
         this.isGrounded = collision.gameObject.CompareTag(Player.GROUND_TAG);
 
-        if (collision.gameObject.CompareTag(Player.ENEMY_TAG))
+        if (collision.gameObject.CompareTag(Enemy.TAG))
         {
             Destroy(this.gameObject);
         }
@@ -90,7 +88,7 @@ public class Player : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag(Player.ENEMY_TAG))
+        if (collision.CompareTag(Enemy.TAG))
         {
             Destroy(this.gameObject);
         }
