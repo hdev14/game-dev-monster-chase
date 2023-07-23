@@ -12,6 +12,8 @@ public class Camera : MonoBehaviour
 
     void Start()
     {
+        Debug.Log(GameManager.instance.playerIndex);
+
         this.playerObject = GameObject.FindWithTag("Player");
 
         if (this.playerObject != null)

@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 public class MenuController : MonoBehaviour
 {
@@ -12,6 +13,6 @@ public class MenuController : MonoBehaviour
 
         GameManager.instance.playerIndex = selectedPlayerIndex;
         
-        //SceneManager.LoadScene("Gameplay");
+        SceneManager.LoadScene("Gameplay");
     }
 }
