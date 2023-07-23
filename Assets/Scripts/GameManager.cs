@@ -12,6 +12,11 @@ public class GameManager : MonoBehaviour
     public int playerIndex;
 
 
+    public GameObject getPlayer()
+    {
+        return this.players[this.playerIndex];
+    }
+
     private void Awake()
     {
         if (GameManager.instance == null)

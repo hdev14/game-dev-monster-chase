@@ -288,6 +288,7 @@ MonoBehaviour:
   players:
   - {fileID: 666356804091257093, guid: 4f1a188a0acd4d04aa6bcc4f64070d01, type: 3}
   - {fileID: 695838074789077494, guid: 4566c93aa98a58e41890a7c90d0f9e08, type: 3}
+  playerIndex: 0
 --- !u!4 &623039827
 Transform:
   m_ObjectHideFlags: 0
